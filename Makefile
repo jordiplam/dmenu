@@ -61,4 +61,7 @@ uninstall:
 		$(DESTDIR)$(MANPREFIX)/man1/dmenu.1\
 		$(DESTDIR)$(MANPREFIX)/man1/stest.1
 
-.PHONY: all options clean dist install uninstall
+update:
+	git pull git://git.suckless.org/dmenu master
+
+.PHONY: all options clean dist install uninstall update

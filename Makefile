@@ -62,6 +62,6 @@ uninstall:
 		$(DESTDIR)$(MANPREFIX)/man1/stest.1
 
 update:
-	git pull git://git.suckless.org/dmenu master
+	git pull --rebase git://git.suckless.org/dmenu master
 
 .PHONY: all options clean dist install uninstall update
